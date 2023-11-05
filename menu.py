@@ -1,7 +1,9 @@
 from player import Player
 from battle import Battle
+from monster import Monster
 
 
+# noinspection PyMethodMayBeStatic
 class Menu:
     def char_creation(self):
         print('\nWelcome to TBG!')
@@ -12,8 +14,9 @@ class Menu:
         print('\n------------------------------')
         print('\nTutorial Battle!')
         print('\n------------------------------')
+        monster = Monster('Goblin', 2)
         battle = Battle()
-        battle.battle(player)
+        battle.battle(player, monster)
         print('\n------------------------------\n')
         print('Tutorial Completed!')
         print('\n------------------------------\n')

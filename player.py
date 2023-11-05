@@ -2,6 +2,11 @@ import random
 
 
 class Player:
+
+    health = 0
+    damage = 0
+    speed = 0
+
     def __init__(self, name, level, gold, exp):
         self.name = name
         self.level = level
