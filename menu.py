@@ -20,4 +20,5 @@ class Menu:
         self.main_menu()
 
     def main_menu(self):
+        # Add main menu options
         print('Welcome to the Main Menu!')
